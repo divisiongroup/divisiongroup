@@ -1,3 +1,4 @@
+/*colors*/
 $dg-red: #da2128;
 $dg-grey: #666666;
 
@@ -16,6 +17,10 @@ a, a:hover, a:focus {
     transition: all 0.3s ease;
 }
 
+.off-canvas.is-closed {
+    visibility: inherit;
+}
+
 .header {
     position: fixed;
     right: 0;
@@ -23,9 +28,7 @@ a, a:hover, a:focus {
     margin: 0 auto;
     width: 1200px;
     max-width: 90%;
-    z-index: 30;
-    opacity: 1;
-    visibility: visible;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -37,24 +40,83 @@ a, a:hover, a:focus {
             justify-content: space-between;
 
     #menu {
-    	-ms-grid-column-align: right;
-    	    justify-self: right;
-	}
-	.menu {
+        display: none;
+        -ms-grid-column-align: right;
+            justify-self: right;
+    }
+    .menu {
 
-		a, a:link, a:visited {
-			font-size: 25px;
-			color: #fff;
-			border-bottom: 1px solid #fff;
-			text-transform: uppercase;
-		}
+        a, a:link, a:visited {
+            font-size: 25px;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            text-transform: uppercase;
+        }
 
-		a:hover, a:focus {
-			color: $dg-red;
-			border-bottom: 1px solid $dg-red;
-		}
-	}
+        a:hover, a:focus {
+            color: $dg-red;
+            border-bottom: 1px solid $dg-red;
+        }
+    }
+    .menu-icon {
+        margin-top: 2rem;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
 }
 
+.off-canvas {
+    background-color: $dg-red;
+    
+    &.is-transition-overlap.is-open {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    }
+
+    .mobile-menu {
+        margin-top: 60px;
+        display: block;
+
+        a {
+            text-transform: uppercase;
+            color: #fff;
+        }
+    } 
+}
+
+/* .position-left {*/
+/*     width: 310px;*/
+/*     -webkit-transform: translateX(-310px);*/
+/*         -ms-transform: translateX(-310px);*/
+/*             transform: translateX(-310px);*/
+/* }*/
+
+/* .position-right {*/
+/*     width: 310px;*/
+/*     -webkit-transform: translateX(310px);*/
+/*         -ms-transform: translateX(310px);*/
+/*             transform: translateX(310px);*/
+/* }*/
+
+
+
+@media only screen and (min-width: 64em) {
+    .header #menu {
+        display: block;
+    }
+    .menu-icon {
+        display: none;
+    }
+}
+
+.home .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 90%;
+}
 
 

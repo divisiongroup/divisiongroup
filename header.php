@@ -8,7 +8,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrapper">
+<div id="wrapper" class="off-canvas-wrapper">
 <header class="header" role="banner">
 		<div class="logo">
 			<?php echo csl_CustomSiteLogo_show_logo(); ?>
@@ -17,5 +17,9 @@
 		<nav id="menu" role="navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		</nav>
+		<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
 </header>
-<div id="container">
+<div id="offCanvas" class="off-canvas position-right" data-off-canvas data-transition="overlap">
+  <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'menu mobile-menu'  ) ); ?>
+</div>
+<div id="container" class="off-canvas-content" data-off-canvas-content>
