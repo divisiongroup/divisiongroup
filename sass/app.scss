@@ -110,13 +110,21 @@ a, a:hover, a:focus {
 }
 
 .home .footer {
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 90%;
+    color: #fff;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.footer {
     margin: 0 auto;
     width: 1200px;
     max-width: 90%;
+    
 }
 
 
