@@ -95,7 +95,7 @@ a, a:hover, a:focus {
 
   .menu-icon {
     display: none; } }
-.home .footer, .error404 .footer {
+.home .footer {
   margin: 0 auto;
   width: 1200px;
   max-width: 90%;
