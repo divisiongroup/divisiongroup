@@ -48,6 +48,11 @@ a, a:hover, a:focus {
     -ms-flex-item-align: start;
     align-self: flex-start; }
 
+.elementor-section.elementor-section-boxed > .elementor-container {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 90%; }
+
 .off-canvas {
   background-color: #da2128; }
   .off-canvas.is-transition-overlap.is-open {
