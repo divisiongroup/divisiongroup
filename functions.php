@@ -12,7 +12,7 @@ register_nav_menus(
 array( 'main-menu' => __( 'Main Menu', 'divisiongroup' ) )
 );
 }
-add_action( 'wp_enqueue_scripts', 'my_custom_script_load' );
+add_action( 'wp_enqueue_scripts', 'my_custom_script_load', 1000 );
 function my_custom_script_load(){
 	wp_enqueue_style( 'override-style', get_stylesheet_directory_uri() . '/css/app.css', array( 'style' ) );
 	wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/css/foundation.min.css' );

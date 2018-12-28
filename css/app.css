@@ -37,8 +37,8 @@ a, a:hover, a:focus {
     justify-self: right; }
   .header .menu a, .header .menu a:link, .header .menu a:visited {
     font-size: 25px;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #666;
+    border-bottom: 1px solid #666;
     text-transform: uppercase; }
   .header .menu a:hover, .header .menu a:focus {
     color: #da2128;
@@ -47,6 +47,13 @@ a, a:hover, a:focus {
     margin-top: 2rem;
     -ms-flex-item-align: start;
     align-self: flex-start; }
+
+.home .header .menu a, .home .header .menu a:link, .home .header .menu a:visited,
+.page-id-2 .header .menu a,
+.page-id-2 .header .menu a:link,
+.page-id-2 .header .menu a:visited {
+  color: #fff;
+  border-bottom: 1px solid #fff; }
 
 .off-canvas {
   background-color: #da2128; }
@@ -59,6 +66,11 @@ a, a:hover, a:focus {
     .off-canvas .mobile-menu a {
       text-transform: uppercase;
       color: #fff; }
+
+.elementor-section.elementor-section-boxed > .elementor-container {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 90%; }
 
 /* .position-left {*/
 /*     width: 310px;*/
@@ -78,7 +90,7 @@ a, a:hover, a:focus {
 
   .menu-icon {
     display: none; } }
-.home .footer {
+.home .footer, .error404 .footer {
   margin: 0 auto;
   width: 1200px;
   max-width: 90%;
