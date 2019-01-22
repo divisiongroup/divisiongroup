@@ -19,7 +19,7 @@ a, a:hover, a:focus {
   right: 0;
   left: 0;
   margin: 0 auto;
-  width: 1200px;
+  /* width: 1200px;*/
   max-width: 90%;
   z-index: 10;
   display: -webkit-box;
@@ -41,8 +41,8 @@ a, a:hover, a:focus {
     border-bottom: 1px solid #666;
     text-transform: uppercase; }
   .header .menu a:hover, .header .menu a:focus {
-    color: #da2128;
-    border-bottom: 1px solid #da2128; }
+    color: #da2128 !important;
+    border-bottom: 1px solid #da2128 !important; }
   .header .menu-icon {
     margin-top: 2rem;
     -ms-flex-item-align: start;
@@ -67,11 +67,11 @@ a, a:hover, a:focus {
       text-transform: uppercase;
       color: #fff; }
 
-.elementor-section.elementor-section-boxed > .elementor-container {
-  margin: 0 auto;
-  width: 1200px;
-  max-width: 90%; }
-
+@media only screen and (min-width: 64em) {
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    margin: 0 auto;
+    max-width: 1220px;
+    /* max-width: 90%;*/ } }
 .elementor-section.elementor-section-height-full {
   height: 100vh; }
   .elementor-section.elementor-section-height-full > .elementor-container {
@@ -109,5 +109,21 @@ a, a:hover, a:focus {
   margin: 0 auto;
   width: 1200px;
   max-width: 90%; }
+
+#dg_contact h5 {
+  margin: 20px 0 0;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #c1c1c1;
+  line-height: 1.3; }
+#dg_contact p {
+  margin: .5rem 0;
+  font-size: 14px;
+  line-height: 1.25; }
+#dg_contact .elementor-field-textual {
+  padding: 8px 0; }
+#dg_contact input:required, #dg_contact textarea:required {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none; }
 
 /*# sourceMappingURL=app.css.map */
