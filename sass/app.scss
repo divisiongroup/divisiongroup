@@ -63,6 +63,27 @@ a, a:hover, a:focus {
         margin-top: 2rem;
         -ms-flex-item-align: start;
         align-self: flex-start;
+        background: #da2128;
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+    }
+
+    .menu-icon::after {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #fefefe;
+        box-shadow: 0 5px 0 #fefefe, 0 10px 0 #fefefe;
+        content: '';
+    }
+
+    .menu-icon:hover::after {
+        background: #fff;
+        box-shadow: 0 5px 0 #fff, 0 10px 0 #fff;
     }
 }
 
