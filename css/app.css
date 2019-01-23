@@ -37,8 +37,8 @@ a, a:hover, a:focus {
     justify-self: right; }
   .header .menu a, .header .menu a:link, .header .menu a:visited {
     font-size: 25px;
-    color: #666;
-    border-bottom: 1px solid #666;
+    color: #fff;
+    border-bottom: 1px solid #fff;
     text-transform: uppercase; }
   .header .menu a:hover, .header .menu a:focus {
     color: #da2128 !important;
@@ -64,13 +64,6 @@ a, a:hover, a:focus {
   .header .menu-icon:hover::after {
     background: #fff;
     box-shadow: 0 5px 0 #fff, 0 10px 0 #fff; }
-
-.home .header .menu a, .home .header .menu a:link, .home .header .menu a:visited,
-.page-id-2 .header .menu a,
-.page-id-2 .header .menu a:link,
-.page-id-2 .header .menu a:visited {
-  color: #fff;
-  border-bottom: 1px solid #fff; }
 
 .off-canvas {
   background-color: #da2128; }

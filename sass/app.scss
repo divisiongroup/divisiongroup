@@ -48,8 +48,8 @@ a, a:hover, a:focus {
 
         a, a:link, a:visited {
             font-size: 25px;
-            color: #666;
-            border-bottom: 1px solid #666;
+            color: #fff;
+            border-bottom: 1px solid #fff;
             text-transform: uppercase;
         }
 
@@ -87,13 +87,6 @@ a, a:hover, a:focus {
     }
 }
 
-.home .header .menu,
-.page-id-2 .header .menu {
-    a, a:link, a:visited {
-        color: #fff;
-        border-bottom: 1px solid #fff;
-    }
-} 
 
 .off-canvas {
     background-color: $dg-red;
