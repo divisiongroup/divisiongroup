@@ -19,7 +19,6 @@ a, a:hover, a:focus {
   right: 0;
   left: 0;
   margin: 0 auto;
-  /* width: 1200px;*/
   max-width: 90%;
   z-index: 10;
   display: -webkit-box;
@@ -59,10 +58,12 @@ a, a:hover, a:focus {
     width: 20px;
     height: 2px;
     background: #fefefe;
+    -webkit-box-shadow: 0 5px 0 #fefefe, 0 10px 0 #fefefe;
     box-shadow: 0 5px 0 #fefefe, 0 10px 0 #fefefe;
     content: ''; }
   .header .menu-icon:hover::after {
     background: #fff;
+    -webkit-box-shadow: 0 5px 0 #fff, 0 10px 0 #fff;
     box-shadow: 0 5px 0 #fff, 0 10px 0 #fff; }
 
 .off-canvas {
@@ -107,7 +108,6 @@ a, a:hover, a:focus {
     display: none; } }
 .home .footer, .error404 .footer {
   margin: 0 auto;
-  width: 1200px;
   max-width: 90%;
   color: #fff;
   position: fixed;
@@ -117,7 +117,6 @@ a, a:hover, a:focus {
 
 .footer {
   margin: 0 auto;
-  width: 1200px;
   max-width: 90%; }
 
 #dg_contact h5 {
