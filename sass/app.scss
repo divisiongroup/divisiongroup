@@ -146,22 +146,57 @@ a, a:hover, a:focus {
     }
 }
 
-.home .footer, .error404 .footer {
+/* home page text */
+.dg-intro-container {
     margin: 0 auto;
-    max-width: 90%;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 85% !important;
+}
+.dg-intro span {
+    color: #444444;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.365;
+    background: #ffffff;
+    display: inline;
+    -webkit-box-shadow: 0.5rem 0 #ffffff, -0.5rem 0 #ffffff;
+            box-shadow: 0.5rem 0 #ffffff, -0.5rem 0 #ffffff;
+    -webkit-box-decoration-break: clone;
+        -ms-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+}
+@media only screen and (min-width: 768px) {
+    .dg-intro-container {
+        width: 90% !important;
+    }
+    .dg-intro {
+        width: 735px !important;
+    }
+    .dg-intro span {
+        font-size: 30px;
+    }
 }
 
-.footer {
-    margin: 0 auto;
-    max-width: 90%;   
-}
 
+/* contact modal */
+.popmake-close {
+    -webkit-transition: background-color ease .25s;
+    -o-transition: background-color ease .25s;
+    transition: background-color ease .25s; 
+}
+.popmake-close:hover {
+    background-color: #DA2128 !important;
+}
 #dg_contact{
+
+    input:required, textarea:required {
+        background-color: rgba(181, 181,181, .1);
+        padding-left: 10px;
+    }
+
+   input:required:focus, textarea:required:focus {
+        background:transparent;
+    }
 
     h5 {
         margin: 20px 0 0;
@@ -184,5 +219,27 @@ a, a:hover, a:focus {
         -webkit-box-shadow:none !important;
         box-shadow:none !important;
         outline:none;
+    }
+}
+
+/* footer */
+body:not(.home) .footer {
+    margin-top:  40px;
+    position: relative;
+    background-color: rgba(0,0,0,.5);
+}
+.footer {
+    margin-top: 0px;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    .source-org.copyright {
+        margin: 0 auto;
+        max-width: 90%;
+        color: #fff;
+        opacity: .5;
+        font-weight: 300;
     }
 }
