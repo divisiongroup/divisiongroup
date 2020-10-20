@@ -20,12 +20,33 @@ a, a:hover, a:focus {
     visibility: inherit;
 }
 
+@media only screen and (max-width: 325px) {
+    .header {
+        max-width: 100% !important;
+    }
+    .header .menu-icon {
+        margin-right: 8px;
+    }
+}
+
+body:not(.home) {
+    .header .menu {
+
+        a, a:link, a:visited {
+            font-size: 25px;
+            color: $dg-grey;
+            border-bottom: 1px solid $dg-grey;
+            text-transform: uppercase;
+        }
+    }
+
+}
 .header {
     position: fixed;
     right: 0;
     left: 0;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 1200px;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -121,22 +142,6 @@ a, a:hover, a:focus {
     }
 }
 
-/* .position-left {*/
-/*     width: 310px;*/
-/*     -webkit-transform: translateX(-310px);*/
-/*         -ms-transform: translateX(-310px);*/
-/*             transform: translateX(-310px);*/
-/* }*/
-
-/* .position-right {*/
-/*     width: 310px;*/
-/*     -webkit-transform: translateX(310px);*/
-/*         -ms-transform: translateX(310px);*/
-/*             transform: translateX(310px);*/
-/* }*/
-
-
-
 @media only screen and (min-width: 64em) {
     .header #menu {
         display: block;
@@ -151,11 +156,18 @@ a, a:hover, a:focus {
     margin: 0 auto;
     width: 85% !important;
 }
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .dg-intro-container {
+        top:50px;
+        margin: 0 40px;
+        width: 400px !important;
+    }
+}
 .dg-intro span {
     color: #444444;
     font-size: 20px;
     font-weight: 300;
-    line-height: 1.365;
+    line-height: 1.175;
     background: #ffffff;
     display: inline;
     -webkit-box-shadow: 0.5rem 0 #ffffff, -0.5rem 0 #ffffff;
@@ -170,13 +182,12 @@ a, a:hover, a:focus {
         width: 90% !important;
     }
     .dg-intro {
-        width: 735px !important;
+        width: 635px !important;
     }
     .dg-intro span {
-        font-size: 30px;
+        font-size: 34px;
     }
 }
-
 
 /* contact modal */
 .popmake-close {
@@ -226,7 +237,11 @@ a, a:hover, a:focus {
 body:not(.home) .footer {
     margin-top:  40px;
     position: relative;
-    background-color: rgba(0,0,0,.5);
+
+    .source-org.copyright {
+        color: #666;
+        opacity: 1;
+    }
 }
 .footer {
     margin-top: 0px;
