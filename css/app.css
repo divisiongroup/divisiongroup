@@ -44,6 +44,7 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
   justify-content: space-between; }
   .header #menu {
     display: none;
+    margin-right: 2rem;
     -ms-grid-column-align: right;
     justify-self: right; }
   .header .menu a, .header .menu a:link, .header .menu a:visited {
@@ -55,7 +56,7 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
     color: #da2128 !important;
     border-bottom: 1px solid #da2128 !important; }
   .header .menu-icon {
-    margin-top: 2rem;
+    margin: 2rem 2rem 0 0;
     -ms-flex-item-align: start;
     align-self: flex-start;
     background: #da2128;
@@ -109,7 +110,7 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
 /* home page text */
 .dg-intro-container {
   margin: 0 auto;
-  width: 85% !important; }
+  max-width: 1200px; }
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
   .dg-intro-container {
@@ -117,6 +118,7 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
     margin: 0 40px;
     width: 400px !important; } }
 .dg-intro span {
+  margin-left: 20px;
   color: #444444;
   font-size: 20px;
   font-weight: 300;
@@ -131,9 +133,6 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
   box-decoration-break: clone; }
 
 @media only screen and (min-width: 768px) {
-  .dg-intro-container {
-    width: 90% !important; }
-
   .dg-intro {
     width: 635px !important; }
 
@@ -179,13 +178,15 @@ body:not(.home) .footer {
 
 .footer {
   margin-top: 0px;
-  padding: 20px 0;
+  padding: 20px;
   width: 100%;
   position: fixed;
   bottom: 0; }
+  .footer #copyright {
+    max-width: 1200px;
+    margin: 0 auto; }
   .footer .source-org.copyright {
     margin: 0 auto;
-    max-width: 90%;
     color: #fff;
     opacity: .5;
     font-weight: 300; }
