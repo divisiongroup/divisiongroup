@@ -1,6 +1,7 @@
 /*colors*/
 $dg-red: #da2128;
 $dg-grey: #666666;
+$dg-maxwidth: 90%;
 
 a {
     color: $dg-grey;
@@ -41,12 +42,16 @@ body:not(.home) {
     }
 
 }
-.header {
+.home .header {
     position: fixed;
     right: 0;
     left: 0;
+}
+
+.header {
+    position: relative;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: $dg-maxwidth;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -60,7 +65,7 @@ body:not(.home) {
 
     #menu {
         display: none;
-        margin-right: 2rem;
+        margin-right: 0rem;
         -ms-grid-column-align: right;
             justify-self: right;
     }
@@ -80,7 +85,7 @@ body:not(.home) {
     }
 
     .menu-icon {
-        margin: 2rem 2rem 0 0;
+        margin: 2rem 0 0 0;
         -ms-flex-item-align: start;
         align-self: flex-start;
         background: #da2128;
@@ -129,7 +134,12 @@ body:not(.home) {
     } 
 }
 
-@media only screen and (min-width: 64em) {
+.off-canvas-content {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+@media only screen and (min-width: 1024px) {
     .elementor-section.elementor-section-boxed > .elementor-container {
         margin: 0 auto;
         max-width: 1220px;
@@ -143,7 +153,7 @@ body:not(.home) {
     }
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
     .header #menu {
         display: block;
     }
@@ -155,7 +165,7 @@ body:not(.home) {
 /* home page text */
 .dg-intro-container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: $dg-maxwidth;
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
     .dg-intro-container {
@@ -165,7 +175,7 @@ body:not(.home) {
     }
 }
 .dg-intro span {
-    margin-left: 20px;
+    margin-left: 10px;
     color: #444444;
     font-size: 20px;
     font-weight: 300;
@@ -189,14 +199,6 @@ body:not(.home) {
 }
 
 /* contact modal */
-.popmake-close {
-    -webkit-transition: background-color ease .25s;
-    -o-transition: background-color ease .25s;
-    transition: background-color ease .25s; 
-}
-.popmake-close:hover {
-    background-color: #DA2128 !important;
-}
 #dg_contact{
 
     input:required, textarea:required {
@@ -232,6 +234,36 @@ body:not(.home) {
     }
 }
 
+/* work page */
+.elementor-portfolio__filters {
+    margin-bottom: 2rem !important;
+    justify-content: left;
+    border-bottom: 3px solid #333;
+}
+
+/* project post page */
+.project-post-abs h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+.project-post-abs p {
+    padding-bottom: 15px;
+    line-height: 1 !important;
+    border-bottom: 3px solid #333;
+}
+@media only screen and (min-width: 768px) {
+    .project-post-abs p {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .project-post-abs p {
+        width: 40%;
+    }
+}
+
+
 /* footer */
 body:not(.home) .footer {
     margin-top:  40px;
@@ -239,17 +271,17 @@ body:not(.home) .footer {
 
     .source-org.copyright {
         color: #666;
-        opacity: 1;
+        opacity: 1.25;
     }
 }
 .footer {
     margin-top: 0px;
-    padding: 20px;
+    padding: 20px 0px;
     width: 100%;
     position: fixed;
     bottom: 0;
     #copyright {
-        max-width: 1200px;
+        max-width: $dg-maxwidth;
         margin: 0 auto; 
     }
     .source-org.copyright {
