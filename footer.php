@@ -2,7 +2,7 @@
 </div>
 <footer id="footer" class="footer" role="contentinfo">
 <div id="copyright">
-<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <a href="https://www.instagram.com/divisiongroup/"><img class="instagram-logo" src="/wp-content/uploads/2021/01/instagram-logo.svg"></a></p>
 </div>
 </footer>
 </div>

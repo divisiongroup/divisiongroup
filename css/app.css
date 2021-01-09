@@ -212,4 +212,7 @@ body:not(.home) .footer {
     opacity: .5;
     font-weight: 300; }
 
+.insatgram-logo {
+  width: 25px; }
+
 /*# sourceMappingURL=app.css.map */
