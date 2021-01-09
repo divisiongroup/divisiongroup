@@ -282,7 +282,11 @@ body:not(.home) .footer {
     bottom: 0;
     #copyright {
         max-width: $dg-maxwidth;
-        margin: 0 auto; 
+        margin: 0 auto;
+        * {
+            display: inline-block;
+            vertical-align: sub;
+        }
     }
     .source-org.copyright {
         margin: 0 auto;
@@ -291,6 +295,8 @@ body:not(.home) .footer {
         font-weight: 300;
     }
 }
-.insatgram-logo {
-    width: 25px;
+.instagram-logo {
+    margin-left: .5rem;
+    width: 23px;
+    height: 23px;
 }
