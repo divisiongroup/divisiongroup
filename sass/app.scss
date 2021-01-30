@@ -17,6 +17,10 @@ a, a:hover, a:focus {
     transition: all 0.3s ease;
 }
 
+p {
+    line-height: 1.125;
+}
+
 .off-canvas.is-closed {
     visibility: inherit;
 }
