@@ -1,8 +1,10 @@
-/*colors*/
+/* Colors */
 $dg-red: #da2128;
 $dg-grey: #666666;
 $dg-maxwidth: 90%;
 
+
+/* Global CSS */
 a {
     color: $dg-grey;
 }
@@ -166,7 +168,7 @@ body:not(.home) {
     }
 }
 
-/* home page text */
+/* Home page text */
 .dg-intro-container {
     margin: 0 auto;
     max-width: $dg-maxwidth;
@@ -202,7 +204,7 @@ body:not(.home) {
     }
 }
 
-/* contact modal */
+/* Contact modal */
 #dg_contact{
 
     input:required, textarea:required {
@@ -238,14 +240,14 @@ body:not(.home) {
     }
 }
 
-/* work page */
+/* Work page */
 .elementor-portfolio__filters {
     margin-bottom: 2rem !important;
     justify-content: left;
     border-bottom: 3px solid #333;
 }
 
-/* project post page */
+/* Project post page */
 .project-post-abs h4 {
     margin-bottom: 15px;
     color: #333;
@@ -268,7 +270,7 @@ body:not(.home) {
 }
 
 
-/* footer */
+/* Footer */
 body:not(.home) .footer {
     margin-top:  40px;
     position: relative;

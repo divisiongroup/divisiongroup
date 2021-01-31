@@ -1,4 +1,5 @@
-/*colors*/
+/* Colors */
+/* Global CSS */
 a {
   color: #666666; }
 
@@ -117,7 +118,7 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
 
   .menu-icon {
     display: none; } }
-/* home page text */
+/* Home page text */
 .dg-intro-container {
   margin: 0 auto;
   max-width: 90%; }
@@ -148,7 +149,7 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
 
   .dg-intro span {
     font-size: 34px; } }
-/* contact modal */
+/* Contact modal */
 #dg_contact input:required, #dg_contact textarea:required {
   background-color: rgba(181, 181, 181, 0.1);
   padding-left: 10px; }
@@ -170,13 +171,13 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
   box-shadow: none !important;
   outline: none; }
 
-/* work page */
+/* Work page */
 .elementor-portfolio__filters {
   margin-bottom: 2rem !important;
   justify-content: left;
   border-bottom: 3px solid #333; }
 
-/* project post page */
+/* Project post page */
 .project-post-abs h4 {
   margin-bottom: 15px;
   color: #333; }
@@ -192,7 +193,7 @@ body:not(.home) .header .menu a, body:not(.home) .header .menu a:link, body:not(
 @media only screen and (min-width: 1024px) {
   .project-post-abs p {
     width: 40%; } }
-/* footer */
+/* Footer */
 body:not(.home) .footer {
   margin-top: 40px;
   position: relative; }
